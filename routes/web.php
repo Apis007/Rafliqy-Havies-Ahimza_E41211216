@@ -29,12 +29,9 @@ Route::resource('/',HomeController::class);
 
 Route::resource('dashboard',DashboardController::class);
 // untuk menuju ke halaman pengelaman kerja
-Route::resource('pengalaman_kerja',pengalaman_kerja::class);
-// untuk menuju ke halaman pendidikan
-Route::resource('pendidikan',PendidikanController::class);
+Route::resource('religi',pengalaman_kerja::class);
 
-Route::resource('security',GuardController::class);
-Route::resource('religi',ReligiController::class);
+
 
 
 

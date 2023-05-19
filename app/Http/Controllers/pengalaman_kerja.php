@@ -23,15 +23,15 @@ class pengalaman_kerja extends Controller
         'jabatan' => $request->jabatan,
         'tahun_masuk' => $request->tahun_masuk, 'tahun_keluar' => $request->tahun_keluar
         ]);
-        return redirect()->route('pengalaman_kerja.index')
-        ->with('success', 'Data pengalaman kerja baru telah berhasil disimpan.');
+        return redirect()->route('religi.index')
+        ->with('success', 'Data daftar Haji baru telah berhasil disimpan.');
     }
     // untuk menghapus data
     public function destroy($id)
     {
     DB::table('pengalaman_kerja')->where('id', $id)->delete();
-    return redirect()->route('pengalaman_kerja.index')
-        ->with('success', 'Data pengalaman kerja telah berhasil dihapus.');
+    return redirect()->route('religi.index')
+        ->with('success', 'Data daftar Haji telah berhasil dihapus.');
     }
     //untuk mengupdate data
     public function edit($id)
@@ -48,8 +48,8 @@ class pengalaman_kerja extends Controller
             'tahun_masuk' => $request->tahun_masuk,
             'tahun_keluar' => $request->tahun_keluar
         ]);
-        return redirect()->route('pengalaman_kerja.index')
-            ->with('success', 'Data pengalaman kerja telah berhasil diupdate.');
+        return redirect()->route('religi.index')
+            ->with('success', 'Data daftar Haji telah berhasil diupdate.');
     }
     
 }

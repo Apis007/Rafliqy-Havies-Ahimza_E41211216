@@ -52,7 +52,7 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <form id="pengalaman_kerja_form" method="POST"
-                                    action="{{ route('pengalaman_kerja.store') }}">
+                                    action="{{ route('religi.store') }}">
                                     @csrf
                                     <div class="modal-body">
 
@@ -118,7 +118,7 @@
                                         data-bs-target="#editModal-{{ $pk->id }}">
                                         Edit
                                     </button>
-                                    <form action="{{ route('pengalaman_kerja.destroy', $pk->id) }}" method="POST"
+                                    <form action="{{ route('religi.destroy', $pk->id) }}" method="POST"
                                         class="d-inline">
                                         @csrf
                                         @method('DELETE')
@@ -137,7 +137,7 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <form id="edit_pengalaman_kerja_form" method="POST"
-                                            action="{{ route('pengalaman_kerja.update', $pk->id) }}">
+                                            action="{{ route('religi.update', $pk->id) }}">
                                             @csrf
                                             @method('PUT')
                                             <div class="modal-body">
